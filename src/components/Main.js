@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Hello from './Hello';
+import Button from './Button';
 
 const StyledMain = styled.main`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -10,26 +10,10 @@ const StyledMain = styled.main`
   text-align: center;
 `;
 
-const StyledH2 = styled.h2`
-  font-weight: 300;
-`;
-
-const Button = styled.button`
-  color: red;
-`;
-
 export default function Main() {
   return (
     <StyledMain>
-      <Hello />
-      <StyledH2>
-        Start editing to see some magic happen!!!
-        <span role="img" aria-label="sparkles">
-          {' '}
-          ✨
-        </span>
-      </StyledH2>
-      <Button>Hi there</Button>
+      <Button>Hi there!!!</Button>
     </StyledMain>
   );
 }

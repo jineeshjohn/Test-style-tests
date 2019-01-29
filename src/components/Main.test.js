@@ -12,20 +12,4 @@ describe('<Main />', () => {
       expect(main).toHaveStyleRule('text-align', 'center');
     });
   });
-
-  describe('<h2>', () => {
-    test('it should have style "font-weight: 300"', () => {
-      const wrapper = mount(<Main />);
-      const h2 = wrapper.find('h2');
-
-      expect(h2).toHaveStyleRule('font-weight', '300');
-    });
-
-    test('it should include sparkles emoji', () => {
-      const wrapper = mount(<Main />);
-      const h2 = wrapper.find('h2');
-
-      expect(h2).toIncludeText('✨');
-    });
-  });
 });
